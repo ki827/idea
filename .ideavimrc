@@ -1,0 +1,43 @@
+let mapleader=" "
+set ideajoin
+set NERDTree
+set easymotion
+set keep-english-in-normal
+
+" 设置快捷键将选中文本块复制至系统剪贴板
+" 设置快捷键将系统剪贴板内容粘贴至vim
+vnoremap <leader>yy "+y
+nmap <leader>pp "+p
+
+" NERDTree
+nmap <leader>nt :NERDTree<CR>
+nmap <leader>nz :NERDTreeClose<CR>
+nmap <leader>nf :NERDTreeFind<CR>
+
+" idea
+nmap gi :action GotoImplementation<CR>
+nmap ,, :action ReformatCode<CR>
+nmap <leader>rn :action RenameElement<CR>
+nmap <leader>fr :action RecentFiles<CR>
+nmap <leader>en :action GotoNextError<CR>
+nmap <leader>ep :action GotoPreviousError<CR>
+
+" Method
+nmap <leader>mn :action MethodDown<CR>
+nmap <leader>mp :action MethodUp<CR>
+nmap <leader>mm :action FileStructurePopup<CR>
+
+" Find
+nmap <leader>pf :action FindInPath<CR>
+
+" Run
+nmap <leader>rr :action Run<CR>
+nmap <leader>rd :action Debug<CR>
+
+imap <C-p> <Up>
+imap <C-n> <Down>
+imap <C-b> <Left>
+imap <C-f> <Right>
+imap <C-e> <End>
+imap <C-a> <Esc>^i
+imap <C-;> <End>;
